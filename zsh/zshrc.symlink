@@ -1,5 +1,24 @@
 # shortcut to this dotfiles path is $ZSH
 export ZSH=$HOME/.dotfiles
+export ZSH_CUSTOM="~/.oh-my-zsh/custom" 
+
+# auto-suggestions
+source .oh-my-zsh/custom/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
+
+# plugin
+# source ~/.zshrc
+
+plugins=( 
+    # other plugins...
+    zsh-autosuggestions
+#    autojump
+#    zsh-syntax-highlighting
+)
+
+# autojump
+#	[[ -s /home/baokker/.autojump/etc/profile.d/autojump.sh ]] && source /home/baokker/.autojump/etc/profile.d/autojump.sh
+
+#	autoload -U compinit && compinit -u
 
 # your project folder that we can `c [tab]` to
 export PROJECTS=~/Code
